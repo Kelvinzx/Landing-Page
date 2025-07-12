@@ -1,0 +1,314 @@
+/* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: hsl(0, 5%, 71%);
+  line-height: 1.6;
+  font-size: 16px;
+  width: 100%;
+    height: 100%; 
+}
+
+
+
+.container {
+  max-width: 38rem;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 20rem;
+  
+  text-align: center;
+  align-items: center;
+  background-color: blueviolet; 
+}
+
+
+.header {
+  background-image: url('images/desktop/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  /* The direction column, flex, and spacebetween made the navbar and
+   logo to be on thesame line therbey leaving the 
+  header to be on a diffrent line because of the div div used */
+}
+
+/* This is for the logo and the nav-bar so they both can be on thesame line */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* for d Logo on the left */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(179, 7, 7);
+}
+
+/* for d Navbar list on the right */
+.navbar {
+  list-style: none;  /* use dto remove the numbering*/
+  display: flex;
+  font-size: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+/* for only contact navbar. Just to get the rounded shaped and uppercase */
+.navbar .contact {
+  background-color: white;
+  color: hsl(200, 100%, 30%);
+  border-radius: 5rem;
+  text-transform: uppercase;
+}
+
+/* for the title we are creative */
+.header-title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20rem;
+  color: white;
+  padding-top: 2rem;
+}
+
+/* d container holds both text and image */
+.transform {
+  display: flex;
+  width: 100%;
+  height: 20rem; /* the height of the conatiner*/
+  
+}
+
+/* 4 the left tet */
+.text-content {
+  flex: 1; /* Takes 50% of d container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
+  background-color: white; 
+  
+}
+
+/* Right side of the conatiner is d Image */
+.image-content {
+  flex: 1; /* Takes 50% also. making both side equal */
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* make sure the  image covers the space well */
+  display: block;
+}
+
+.brand {
+  font-size: 36px;
+  font-weight: bold;
+  text-align-last: auto;  /*i want the text not to drop at the center*/
+  text-overflow: clip;
+}
+
+.p-1 {
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  text-decoration: underline;
+  font-weight: bold;
+  color: hsl(51, 84%, 49%);
+  text-transform: uppercase;
+  text-decoration: underline cornsilk;
+}
+
+
+.learn-mor {
+  text-decoration: underline;
+  font-weight: bold;
+  color: hsl(51, 88%, 3%);
+  text-transform: uppercase;
+  text-decoration: underline rgb(227, 139, 109);
+}
+
+
+/* for the testimonials */
+.service{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+
+}
+
+.apple{
+  background-image: url(images/desktop/image-graphic-design.jpg); 
+  background-size: cover;
+}
+
+
+.photo{
+  background-image: url(images/desktop/image-photography.jpg);
+  background-size: cover;
+
+}
+
+.photography{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  
+
+
+
+}
+.design{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+.services{
+  display: flex;
+  object-fit: contain;
+  
+}
+.p{
+  padding-top: 4rem;
+  font-size: 10px;
+}
+
+.pp{
+  padding-top:  0.1rem;
+  font-size: 10px;
+}
+.wrap{
+ padding-top: 9rem; 
+ justify-content: center;
+}
+
+.testi{
+  background-color: white;
+  height: 20rem;
+
+
+}
+
+.t-img{
+  border-radius:  100%;
+  width: 30px;
+
+}
+
+.ttext{
+  font-size: 10px;
+}
+
+.nam{
+  font-size: 8px;
+}
+
+.testimonials{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.sub{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+/* The sugar and co */
+/* The firts 4 picture was brought together by the display flex funtion into a vertical line */
+
+.milk{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+.org{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  
+}
+.conee{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+
+.sugar{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+
+
+
+.pho{
+  display: flex;
+  /* This help to bring the photo into an horizontal line */
+
+}
+
+/* below helps to keep fit the images into the container without leaving the space of the container */
+.ph3{
+  width: 100%;  
+  height: 13rem;
+}
+
+
+
+
+.down-navbar{
+  list-style: none;
+  display: flex;
+  font-size: 10px;
+  gap: 20px;
+}
+
+.down-navbar li a{
+  text-decoration: none;
+  color: hsl(210, 4%, 67%);
+  font-size: 9px;
+  
+}
+
+
+/* This moves the nav bar to the center of d page */
+.nav-contain{
+  justify-items: center;  
+}
+
+.fff{
+  background-color: rgb(217, 212, 212);
+  height: 100% ;
+  
+}
+

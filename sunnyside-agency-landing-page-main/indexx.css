@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 100%);
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 90rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 10rem;
+    padding-right:10rem ;
+}
+
+.sunny-side{
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    padding-bottom: 1rem;
+    padding-top: 1.0rem;
+    color: blue;
+    font-weight: bolder;
+    font-size: large;
+    font-style: oblique;
+
+}
+.navbar{
+display: flex;
+list-style: none;
+gap: 30px;
+padding-bottom: 0.9rem;
+padding-top: 1.4rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.navbar li a{
+    color: rgb(81, 12, 231);
+    text-decoration: none; 
+    position: relative;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+
+}
+.navbar li a:hover{
+    background-color: rgb(232, 238, 232);
+    color: blueviolet;
+    transform: rotateZ(1.1);
+    border-radius: 5px;
+}
+
