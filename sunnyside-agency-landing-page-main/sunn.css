@@ -1,0 +1,481 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgb(165, 52, 52);
+    color: hsl(232, 10%, 55%);
+}
+
+.container {
+    max-width: 38rem;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 20rem;
+  
+  text-align: center;
+  align-items: center;
+  background-color: blueviolet; 
+}
+
+
+/* Header */
+
+.header {
+    background-image: url('images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar .contact {
+    background-color: white;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+
+/* Hero text */
+
+.header-title {
+    font-family: 'Fraunces', serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-top: 6rem;
+}
+
+.header::after {
+    content: url('images/icon-arrow-down.svg');
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Transform and Standout Sections */
+
+.transform {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.text-content,
+.image-content {
+    flex: 1;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.brand {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: hsl(212, 27%, 19%);
+}
+
+.p-1 {
+    margin: 1.5rem 0;
+    font-size: 16px;
+}
+
+.learn-more {
+    text-decoration: underline;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(51, 100%, 49%);
+}
+
+.learn-mor {
+    text-decoration: underline;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(7, 99%, 70%);
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Services */
+
+.services {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.design,
+.photography {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+.design {
+    background-image: url('images/desktop/image-graphic-design.jpg');
+    color: hsl(167, 40%, 24%);
+}
+
+.photography {
+    background-image: url('images/desktop/image-photography.jpg');
+    color: hsl(198, 62%, 26%);
+}
+
+.design h1,
+.photography h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.design p,
+.photography p {
+    font-size: 16px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+
+/* Testimonials */
+
+.testi {
+    background-color: #fff;
+    padding: 6rem 4rem;
+    text-align: center;
+}
+
+.testi h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(210, 4%, 67%);
+    font-size: 16px;
+    margin-bottom: 4rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.testimonial {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.t-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.ttext {
+    font-size: 16px;
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 2rem;
+}
+
+.nam h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    color: hsl(212, 27%, 19%);
+}
+
+.nam h3 {
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+}
+
+
+/* Gallery */
+
+.pho {
+    display: flex;
+}
+
+.pho div {
+    flex: 1;
+}
+
+.ph3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+.fff {
+    background-color: hsl(168, 34%, 41%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+
+
+
+.footer .footimage {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(19%) saturate(336%) hue-rotate(118deg) brightness(92%) contrast(88%);
+    margin-bottom: 2rem;
+}
+
+.down-navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.down-navbar a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.service{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+
+}
+
+.apple{
+  background-image: url(images/desktop/image-graphic-design.jpg); 
+  background-size: cover;
+}
+
+
+.photo{
+  background-image: url(images/desktop/image-photography.jpg);
+  background-size: cover;
+
+}
+
+.photography{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  
+
+
+
+}
+.design{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+.services{
+  display: flex;
+  object-fit: contain;
+  
+}
+.p{
+  padding-top: 4rem;
+  font-size: 10px;
+}
+
+.pp{
+  padding-top:  0.1rem;
+  font-size: 10px;
+}
+.wrap{
+ padding-top: 9rem; 
+ justify-content: center;
+}
+
+.testi{
+  background-color: white;
+  height: 20rem;
+
+
+}
+
+.t-img{
+  border-radius:  100%;
+  width: 30px;
+
+}
+
+.ttext{
+  font-size: 10px;
+}
+
+.nam{
+  font-size: 8px;
+}
+
+.testimonials{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.sub{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+/* The sugar and co */
+/* The firts 4 picture was brought together by the display flex funtion into a vertical line */
+
+.milk{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+.org{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  
+}
+.conee{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+
+.sugar{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+
+
+
+.pho{
+  display: flex;
+  /* This help to bring the photo into an horizontal line */
+
+}
+
+/* below helps to keep fit the images into the container without leaving the space of the container */
+.ph3{
+  width: 100%;  
+  height: 13rem;
+}
+
+
+
+
+.down-navbar{
+  list-style: none;
+  display: flex;
+  font-size: 10px;
+  gap: 20px;
+}
+
+.down-navbar li a{
+  text-decoration: none;
+  color: hsl(210, 4%, 67%);
+  font-size: 9px;
+  
+}
+
+
+/* This moves the nav bar to the center of d page */
+.nav-contain{
+  justify-items: center;  
+}
+
+.fff{
+  background-color: rgb(174, 82, 82);
+  height: 100% ;
+  
+}
