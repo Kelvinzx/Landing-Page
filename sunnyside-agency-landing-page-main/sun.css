@@ -16,15 +16,7 @@ body {
 
 
 .container {
-  max-width: 38rem;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-bottom: 20rem;
-  
-  text-align: center;
-  align-items: center;
-  background-color: white; 
+  width: 100%;
 }
 
 
@@ -32,7 +24,7 @@ body {
   background-image: url('images/desktop/image-header.jpg');
   background-size: cover;
   background-position: center;
-  height: 20rem;
+  height: 100vh;
   color: white;
   display: flex; 
   flex-direction: column;
@@ -61,7 +53,7 @@ body {
 .navbar {
   list-style: none;  /* use dto remove the numbering*/
   display: flex;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .navbar li a {
@@ -84,7 +76,7 @@ body {
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 10rem;
+  margin-bottom: 22rem;
   color: white;
 }
 
@@ -94,16 +86,16 @@ body {
     bottom: 11rem;
     transform: translateX(-50%);
     display: flex;
-    left: 37%;
+    left: 50%;
     padding-bottom: 6rem;
-    height: 5rem;
+    height: 2rem;
 }
 
 /* d container holds both text and image */
 .transform {
   display: flex;
   width: 100%;
-  height: 20rem; /* the height of the conatiner*/
+  height: 35rem; /* the height of the conatiner*/
   
 }
 
@@ -115,6 +107,7 @@ body {
   justify-content: center;
   padding: 2px;
   background-color: white; 
+  align-items: center;
   
 }
 
@@ -134,7 +127,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   text-align-last: auto;  /*i want the text not to drop at the center*/
-  text-overflow: clip;
+
 }
 
 .p-1 {
@@ -166,8 +159,8 @@ body {
     display: flex;
     width: 100%;
     height: 20rem;
-    object-fit: ;
 }
+
 
 .design,
 .photography {
@@ -199,39 +192,53 @@ body {
     margin-bottom: 1rem;
 }
 
-.p{
+.design p, .photography p{
     font-size: 16px;
-    padding-top:4rem ;
+    max-width: 75%;
     margin: 0 auto;
 }
 
 .pp{
-  padding-top: 0.1rem;
-  font-size: 16px;
-}
-
+      padding-bottom: 0.6rem}
 
 /* Testimonials */
 
 .testi{
   background-color: white;
-  height: 20rem;
+  padding: 6rem 4rem;
+  text-align: center;
+  
+}
 
-
+.testimonial{
+  flex: 1;
+  padding: 0 1rem;
 }
 
 .t-img{
-  border-radius:  100%;
-  width: 30px;
+  border-radius:  50%;
+  width: 60px;
+  margin-bottom: 2rem;  
+  
 
 }
 
 .ttext{
-  font-size: 10px;
+  font-size: 16px;
 }
 
-.nam{
-  font-size: 8px;
+.nam h2{
+  font-size: 14px;
+  font-family: 'fraunces',serif;
+  color: hsl(212, 27%, 19%);
+
+}
+
+.nam h3{
+  font-size: 14px;
+  font-family: 'fraunces',serif;
+  color: hsl(210, 4%, 67%);
+
 }
 
 .testimonials{
